@@ -1,0 +1,88 @@
+/*  ==========================================================================
+    Mixins
+    ========================================================================== */
+/*
+    Clear after floats
+    ========================================================================== */
+
+@mixin clearfix {
+    zoom:1;
+    &:before, &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+/*
+    Responsive mixins
+    ========================================================================== */
+
+@mixin custom-breakpoint($max, $min: $w-min) {
+    @media (min-width: $min) and (max-width: $max) {
+        @content;
+    }
+}
+
+@mixin heightpoint($max) {
+    @media (min-height: 0px ) and (max-height: $max) {
+        @content;
+    }
+}
+
+@mixin custom-mobilefirst($res) {
+    @media screen and (min-width: $res) {
+        @content;
+    }
+}
+
+@mixin mobilefirst($res) {
+    @media screen and (min-width: $res) {
+        @content;
+    }
+}
+
+/*
+    Typography
+    ========================================================================== */
+
+// Rem font-size PX fallback
+
+@mixin rem($sizeValue: 1.6) {
+    // Fallback
+    font-size: ($sizeValue * 10) + px;
+    font-size: rem-calc(($sizeValue * 10));
+}
+// USAGE - @include rem(1.2);
+
+// REM RWD using maps
+@mixin rem-rwd($fs-map, $fs-breakpoints: $breakpoints) {
+    @each $fs-breakpoint, $fs-font-size in $fs-map {
+        @if $fs-breakpoint == null {
+            @include rem( $fs-font-size );
+        }
+        @else {
+            @include breakpoint( $fs-breakpoint ) {
+                @include rem( $fs-font-size );
+            }
+        }
+    }
+}
+// USAGE - @include rem-rwd($fs-body);
+
+@mixin v-spacing($field, $mobile-size, $desktop-size) {
+  #{$field}: get-linear-size($mobile-size, $desktop-size);
+
+  @include breakpoint( small down ) {
+    #{$field}: $mobile-size;
+  }
+}
+
+@mixin flush-grid($property) {
+  position: relative;
+  #{$property}: -5vw;
+}

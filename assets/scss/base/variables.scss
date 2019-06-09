@@ -1,0 +1,57 @@
+/* ===========================
+  Colors
+=========================== */
+$c-white: #ffffff;
+$c-black: #181818;
+$c-light-grey: #eaeaea;
+
+
+/* ===========================
+  Fonts
+=========================== */
+$f-heading: 'brownbold';
+$f-body: 'brownregular';
+$f-body-light: 'brownlight';
+
+
+/* ===========================
+  Widths & Heights
+=========================== */
+// $h-navbar: 90px;
+// $h-navbar-mobile: 60px;
+
+
+/* ===========================
+  z-index
+=========================== */
+
+
+/* ===========================
+  Transitions
+=========================== */
+
+
+/* ===========================
+  Foundation Grid
+=========================== */
+$container-padding: 5vw;
+
+$grid-column-gutter: (
+  small: 15px,
+  medium: 40px,
+);
+
+$global-width: 9999px + map-get( $grid-column-gutter, medium );
+$grid-column-count: 20;
+$global-flexbox: false;
+$global-right: left;
+$global-left: left;
+$breakpoints: (
+  small: 0,
+  medium: 640px,
+  xmedium: 980px,
+  large: 1200px,
+  xlarge: 1400px,
+  xxlarge: 1800px
+);
+$breakpoint-classes: (small medium xmedium large xlarge xxlarge);

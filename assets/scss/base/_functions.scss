@@ -1,0 +1,11 @@
+/* ==================================
+    v-spacing()
+================================== */
+$resolution-range-bottom: map-get($breakpoints, small);
+$resolution-range-top: map-get($breakpoints, xxlarge);
+
+@function get-linear-size($mobile-size, $desktop-size) {
+    $a: ($desktop-size - $mobile-size) / ( $resolution-range-top - $resolution-range-bottom );
+    $b: -$a * $resolution-range-bottom;
+    @return calc(#{$a} * 100vw + #{$b + $mobile-size});
+}
