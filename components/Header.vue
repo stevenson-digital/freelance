@@ -3,12 +3,14 @@
     <div class="container">
       <div class="row">
         <div class="columns">
-          <h1 class="c-Header__h1 f-heading-136-90">
-            Freelance web developer<br>Birmingham.
-          </h1>
-          <p class="c-Header__0121">
-            #0121
-          </p>
+          <div class="c-Header__h1-wrap">
+            <h1 class="c-Header__h1 f-heading-136-90">
+              Freelance web developer<br>Birmingham.
+            </h1>
+            <p class="c-Header__0121">
+              #0121
+            </p>
+          </div>
           <LineLink link="https://google.co.uk" link-text="Holla at me" />
         </div>
       </div>
@@ -41,10 +43,14 @@ export default {
 /* ===========================
   Elements
 =========================== */
-.c-Header__h1 {
-  z-index: 1;
+.c-Header__h1-wrap {
   position: relative;
   margin-bottom: 50px;
+}
+
+.c-Header__h1 {
+  position: relative;
+  z-index: 1;
 }
 
 .c-Header__0121 {
