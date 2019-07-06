@@ -17,8 +17,8 @@ $f-body-light: 'brownlight';
 /* ===========================
   Widths & Heights
 =========================== */
-// $h-navbar: 90px;
-// $h-navbar-mobile: 60px;
+$h-navbar: 80px;
+$h-navbar-mobile: 50px;
 
 
 /* ===========================
@@ -29,12 +29,12 @@ $f-body-light: 'brownlight';
 /* ===========================
   Transitions
 =========================== */
-
+$t-standard: 200ms linear;
 
 /* ===========================
   Foundation Grid
 =========================== */
-$container-padding: 5vw;
+$container-padding: 60px;
 
 $grid-column-gutter: (
   small: 15px,

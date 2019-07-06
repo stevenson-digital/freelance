@@ -1,12 +1,16 @@
 <template>
-  <div class="container">
-    <h1>Freelance</h1>
+  <div>
+    <Header />
   </div>
 </template>
 
 <script>
-export default {
+import Header from '~/components/Header'
 
+export default {
+  components: {
+    Header
+  }
 }
 </script>
 
