@@ -3,9 +3,10 @@
     <div class="container">
       <div class="row">
         <div class="columns">
-          <h1 class="f-heading-136-90">
+          <h1 class="c-Header__h1 f-heading-136-90">
             Freelance web developer<br>Birmingham.
           </h1>
+          <p class="c-Header__0121">#0121</p>
         </div>
       </div>
     </div>
@@ -33,5 +34,22 @@ export default {
 /* ===========================
   Elements
 =========================== */
+.c-Header__h1 {
+  z-index: 1;
+  position: relative;
+}
 
+.c-Header__0121 {
+  position: absolute;
+  top: 0;
+  left: $container-padding;
+  bottom: 0;
+  margin: auto;
+  z-index: 0;
+  color: $c-light-grey;
+  font-size: 444px;
+  line-height: 250px;
+  font-family: $f-heading;
+  height: 315px;
+}
 </style>
