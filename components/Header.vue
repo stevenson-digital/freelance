@@ -6,7 +6,10 @@
           <h1 class="c-Header__h1 f-heading-136-90">
             Freelance web developer<br>Birmingham.
           </h1>
-          <p class="c-Header__0121">#0121</p>
+          <p class="c-Header__0121">
+            #0121
+          </p>
+          <LineLink link="https://google.co.uk" link-text="Holla at me" />
         </div>
       </div>
     </div>
@@ -14,8 +17,12 @@
 </template>
 
 <script>
-export default {
+import LineLink from '~/components/LineLink'
 
+export default {
+  components: {
+    LineLink
+  }
 }
 </script>
 
@@ -37,6 +44,7 @@ export default {
 .c-Header__h1 {
   z-index: 1;
   position: relative;
+  margin-bottom: 50px;
 }
 
 .c-Header__0121 {
