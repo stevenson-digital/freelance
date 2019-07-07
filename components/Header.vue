@@ -11,7 +11,7 @@
               #0121
             </p>
           </div>
-          <LineLink link="https://google.co.uk" link-text="Holla at me" />
+          <LineLink link="mailto:ollie@stevenson.digital" link-text="Enquire now" />
         </div>
       </div>
     </div>

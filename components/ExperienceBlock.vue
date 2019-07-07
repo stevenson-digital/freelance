@@ -43,7 +43,7 @@ export default {
   Elements
 =========================== */
 .c-ExperienceBlock__h3 {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .c-ExperienceBlock__job {
