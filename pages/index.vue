@@ -6,7 +6,7 @@
         <div class="container">
           <div class="row">
             <div class="columns medium-10">
-              <h2 class="[ l-Experience__h2 ] [ f-heading-98-46 ]">
+              <h2 class="[ l-Experience__h2 ] [ f-heading-98-34 ]">
                 Experience.
               </h2>
               <p class="mb-110-50">
@@ -52,57 +52,57 @@
       <section class="l-Offering">
         <div class="l-Offering__back-panel">
           <marquee-text :repeat="10" :duration="12">
-            <p class="[ f-heading-98-46 ] [ u-color-white ]">
+            <p class="[ f-heading-98-34 ] [ u-color-white ]">
               What I can offer you.
             </p>
           </marquee-text>
           <marquee-text :repeat="10" :duration="9">
-            <p class="[ f-heading-98-46 ] [ u-color-white ]">
+            <p class="[ f-heading-98-34 ] [ u-color-white ]">
               What I can offer you.
             </p>
           </marquee-text>
           <marquee-text :repeat="10" :duration="15">
-            <p class="[ f-heading-98-46 ] [ u-color-white ]">
+            <p class="[ f-heading-98-34 ] [ u-color-white ]">
               What I can offer you.
             </p>
           </marquee-text>
           <marquee-text :repeat="10" :duration="12">
-            <p class="[ f-heading-98-46 ] [ u-color-white ]">
+            <p class="[ f-heading-98-34 ] [ u-color-white ]">
               What I can offer you.
             </p>
           </marquee-text>
           <marquee-text :repeat="10" :duration="7">
-            <p class="[ f-heading-98-46 ] [ u-color-white ]">
+            <p class="[ f-heading-98-34 ] [ u-color-white ]">
               What I can offer you.
             </p>
           </marquee-text>
           <marquee-text :repeat="10" :duration="10">
-            <p class="[ f-heading-98-46 ] [ u-color-white ]">
+            <p class="[ f-heading-98-34 ] [ u-color-white ]">
               What I can offer you.
             </p>
           </marquee-text>
           <marquee-text :repeat="10" :duration="13">
-            <p class="[ f-heading-98-46 ] [ u-color-white ]">
+            <p class="[ f-heading-98-34 ] [ u-color-white ]">
               What I can offer you.
             </p>
           </marquee-text>
           <marquee-text :repeat="10" :duration="15">
-            <p class="[ f-heading-98-46 ] [ u-color-white ]">
+            <p class="[ f-heading-98-34 ] [ u-color-white ]">
               What I can offer you.
             </p>
           </marquee-text>
           <marquee-text :repeat="10" :duration="10">
-            <p class="[ f-heading-98-46 ] [ u-color-white ]">
+            <p class="[ f-heading-98-34 ] [ u-color-white ]">
               What I can offer you.
             </p>
           </marquee-text>
           <marquee-text :repeat="10" :duration="15">
-            <p class="[ f-heading-98-46 ] [ u-color-white ]">
+            <p class="[ f-heading-98-34 ] [ u-color-white ]">
               What I can offer you.
             </p>
           </marquee-text>
           <marquee-text :repeat="10" :duration="12">
-            <p class="[ f-heading-98-46 ] [ u-color-white ]">
+            <p class="[ f-heading-98-34 ] [ u-color-white ]">
               What I can offer you.
             </p>
           </marquee-text>

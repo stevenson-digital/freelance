@@ -3,11 +3,11 @@
     <div class="container">
       <div class="row">
         <div class="columns">
-          <a class="[ c-Footer__link ] [ u-color-white f-heading-98-46 ]" :href="'tel:+447760668039'">
-            Tel:<span class="f-heading-98-46--light">+447760668039</span>
+          <a class="[ c-Footer__link ] [ u-color-white f-heading-98-24 ]" :href="'tel:+447760668039'">
+            Tel:<span class="f-heading-98-34--light">+447760668039</span>
           </a>
-          <a class="[ c-Footer__link ] [ u-color-white f-heading-98-46 ]" :href="'mailto:ollie@stevenson.digital'">
-            Email:<span class="f-heading-98-46--light">ollie@stevenson.digital</span>
+          <a class="[ c-Footer__link ] [ u-color-white f-heading-98-24 ]" :href="'mailto:ollie@stevenson.digital'">
+            Email:<span class="f-heading-98-34--light">ollie@stevenson.digital</span>
           </a>
         </div>
       </div>
@@ -42,7 +42,7 @@ export default {
   span {
     position: relative;
     display: inline-block;
-    margin-left: 20px;
+    @include v-spacing(margin-left, 5px, 20px);
 
     &:after {
       content: '';
@@ -53,6 +53,11 @@ export default {
       height: 2px;
       background-color: $c-white;
       transition: width 425ms $t-cubic-bez;
+    }
+
+    @media (max-width: 330px) {
+      display: block;
+      margin-left: 0;
     }
   }
 

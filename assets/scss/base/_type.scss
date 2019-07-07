@@ -44,10 +44,20 @@ body {
   @include v-spacing(font-size, 90px, 120px);
 }
 
-.f-heading-98-46 {
+.f-heading-98-34 {
   font-family: $f-heading;
   line-height: 1;
-  @include v-spacing(font-size, 46px, 98px);
+  @include v-spacing(font-size, 34px, 98px);
+
+  &--light {
+    font-family: $f-body-light;
+  }
+}
+
+.f-heading-98-24 {
+  font-family: $f-heading;
+  line-height: 1;
+  @include v-spacing(font-size, 24px, 98px);
 
   &--light {
     font-family: $f-body-light;
