@@ -38,6 +38,12 @@ body {
   @include v-spacing(font-size, 90px, 136px);
 }
 
+.f-heading-120-90 {
+  font-family: $f-heading;
+  line-height: 1.17;
+  @include v-spacing(font-size, 90px, 120px);
+}
+
 .f-heading-98-46 {
   font-family: $f-heading;
   line-height: 1;

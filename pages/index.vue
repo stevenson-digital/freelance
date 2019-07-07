@@ -117,6 +117,23 @@
           </div>
         </div>
       </section>
+
+      <section class="l-WorkSamples">
+        <div class="l-WorkSamples__txt">
+          <div class="l-WorkSamples__txt-top">
+            <p class="f-heading-120-90">
+              Work samples
+            </p>
+            <div class="l-WorkSamples__line" />
+          </div>
+          <p class="f-heading-120-90">
+            available upon request.
+          </p>
+          <div class="l-WorkSamples__link">
+            <LineLink link="mailto:ollie@stevenson.digital" link-text="Request now" />
+          </div>
+        </div>
+      </section>
     </main>
   </div>
 </template>
@@ -124,11 +141,13 @@
 <script>
 import Header from '~/components/Header'
 import ExperienceBlock from '~/components/ExperienceBlock'
+import LineLink from '~/components/LineLink'
 
 export default {
   components: {
     Header,
-    ExperienceBlock
+    ExperienceBlock,
+    LineLink
   }
 }
 </script>
@@ -185,5 +204,32 @@ export default {
   margin-left: $container-padding;
   background-color: $c-white;
   padding: 80px $container-padding;
+}
+
+// Work Samples Section
+.l-WorkSamples {
+  background-color: $c-white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.l-WorkSamples__txt-top {
+  display: flex;
+  align-items: center;
+}
+
+.l-WorkSamples__line {
+  height: 5px;
+  background-color: black;
+  flex: 1;
+  margin-left: 60px;
+  margin-top: 45px;
+}
+
+.l-WorkSamples__link {
+  display: block;
+  margin-top: 60px;
 }
 </style>
