@@ -6,9 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $c-black;
-  font-size: 22px;
   font-weight: normal;
   line-height: 1.27;
+  @include v-spacing(font-size, 18px, 22px);
 }
 
 @font-face {
@@ -30,18 +30,6 @@ body {
   src: url('~assets/fonts/brown-light-webfont.woff2') format('woff2'), url('~assets/fonts/brown-light-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-}
-
-.f-heading-136-90 {
-  font-family: $f-heading;
-  line-height: 1;
-  @include v-spacing(font-size, 90px, 136px);
-}
-
-.f-heading-120-90 {
-  font-family: $f-heading;
-  line-height: 1.17;
-  @include v-spacing(font-size, 90px, 120px);
 }
 
 .f-heading-98-34 {
@@ -89,5 +77,5 @@ body {
 .f-light-62-46 {
   font-family: $f-body-light;
   line-height: 1.32;
-  @include v-spacing(font-size, 46px, 62px);
+  @include v-spacing(font-size, 28px, 48px);
 }

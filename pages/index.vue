@@ -119,18 +119,24 @@
       </section>
 
       <section class="l-WorkSamples">
-        <div class="l-WorkSamples__txt">
-          <div class="l-WorkSamples__txt-top">
-            <p class="f-heading-120-90">
-              Work samples
-            </p>
-            <div class="l-WorkSamples__line" />
-          </div>
-          <p class="f-heading-120-90">
-            available upon request.
-          </p>
-          <div class="l-WorkSamples__link">
-            <LineLink link="mailto:ollie@stevenson.digital" link-text="Request now" />
+        <div class="container">
+          <div class="row">
+            <div class="columns">
+              <div class="l-WorkSamples__txt">
+                <div class="l-WorkSamples__txt-top">
+                  <p class="l-WorkSamples__words">
+                    Work samples
+                  </p>
+                  <div class="l-WorkSamples__line" />
+                </div>
+                <p class="l-WorkSamples__words">
+                  available upon request.
+                </p>
+                <div class="l-WorkSamples__link">
+                  <LineLink link="mailto:ollie@stevenson.digital" link-text="Request now" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -218,6 +224,12 @@ export default {
 .l-WorkSamples__txt-top {
   display: flex;
   align-items: center;
+}
+
+.l-WorkSamples__words {
+  font-size: 6.35vw;
+  line-height: 1.17;
+  font-family: $f-heading;
 }
 
 .l-WorkSamples__line {

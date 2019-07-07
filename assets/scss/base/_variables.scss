@@ -17,8 +17,9 @@ $f-body-light: 'brownlight';
 /* ===========================
   Widths & Heights
 =========================== */
-$h-navbar: 80px;
+$h-navbar: 60px;
 $h-navbar-mobile: 50px;
+$w-grid-small: 1280px;
 
 
 /* ===========================
@@ -36,6 +37,7 @@ $t-cubic-bez: cubic-bezier(0.535, 0, 0, 1);
   Foundation Grid
 =========================== */
 $container-padding: 60px;
+$container-padding-small: 20px;
 
 $grid-column-gutter: (
   small: 15px,

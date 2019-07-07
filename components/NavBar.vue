@@ -55,6 +55,14 @@ export default {
   transform: translateY($container-padding);
   transition: transform $t-standard, border-color $t-standard;
 
+  @media (max-width: 1600px) {
+    transform: translateY(40px);
+  }
+
+  @media (max-width: $w-grid-small) {
+    transform: translateY($container-padding-small);
+  }
+
   &.scrolled {
     transform: translateY(0px);
     border-color: $c-light-grey;
@@ -72,6 +80,11 @@ export default {
   height: 100%;
   margin-left: $container-padding;
   transition: height $t-standard;
+
+  @media (max-width: $w-grid-small) {
+    height: 70%;
+    margin-left: $container-padding-small;
+  }
 }
 
 .c-NavBar__email {
@@ -80,6 +93,14 @@ export default {
   text-decoration: none;
   margin-right: $container-padding;
   transition: opacity $t-standard;
+
+  @include breakpoint ( medium down ) {
+    margin-right: $container-padding-small;
+  }
+
+  @media (max-width: $w-grid-small) {
+    margin-right: $container-padding-small;
+  }
 
   &:hover {
     opacity: 0.5;
