@@ -24,8 +24,8 @@ export default {
   },
   methods: {
     moveCursor(e) {
-      this.posX = e.pageX - 11
-      this.posY = e.pageY - 12
+      this.posX = e.pageX - 17
+      this.posY = e.pageY - 17
     }
   }
 }
@@ -34,9 +34,13 @@ export default {
 <style lang="scss">
 @import './assets/scss/main.scss';
 
+body {
+  cursor: none;
+}
+
 #c-CustomCursor {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   position: absolute;
   border-radius: 50%;
   border: 1px solid $c-black;
@@ -47,8 +51,8 @@ export default {
 }
 
 #c-CustomCursor__inner {
-  width: 50%;
-  height: 50%;
+  width: 35%;
+  height: 35%;
   border-radius: 50%;
   background-color: $c-black;
 }
