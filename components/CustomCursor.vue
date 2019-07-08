@@ -1,6 +1,7 @@
 <template>
-  <div id="c-CustomCursor" :style="[{top: posY + 'px'}, {left: posX + 'px'}]">
-    <div id="c-CustomCursor__inner" />
+  <div>
+    <div id="c-CustomCursor" :style="[{top: outerPosY + 'px'}, {left: outerPosX + 'px'}]" />
+    <div id="c-CustomCursor__inner" :style="[{top: posY + 'px'}, {left: posX + 'px'}]" />
   </div>
 </template>
 
@@ -8,6 +9,8 @@
 export default {
   data() {
     return {
+      outerPosX: 0,
+      outerPosY: 0,
       posX: 0,
       posY: 0
     }
@@ -24,8 +27,10 @@ export default {
   },
   methods: {
     moveCursor(e) {
-      this.posX = e.pageX - 17
-      this.posY = e.pageY - 17
+      this.outerPosX = e.pageX - 16
+      this.outerPosY = e.pageY - 16
+      this.posX = e.pageX - 5
+      this.posY = e.pageY - 5
     }
   }
 }
@@ -38,22 +43,25 @@ body {
   cursor: none;
 }
 
+#c-CustomCursor,
+#c-CustomCursor__inner {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 999999;
+}
+
 #c-CustomCursor {
   width: 30px;
   height: 30px;
-  position: absolute;
-  border-radius: 50%;
   border: 1px solid $c-black;
   z-index: 999999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
 }
 
 #c-CustomCursor__inner {
-  width: 35%;
-  height: 35%;
-  border-radius: 50%;
+  width: 10px;
+  height: 10px;
   background-color: $c-black;
 }
 </style>
