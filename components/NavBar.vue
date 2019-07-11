@@ -1,12 +1,26 @@
 <template>
   <div :class="['c-NavBar', {'scrolled': scrolled}]">
-    <img class="c-NavBar__logo" src="~/assets/img/Logo_Black.png" alt="Ollie Stevenson freelance web developer and designer logo">
-    <a class="c-NavBar__email" href="mailto:ollie@stevenson.digital">ollie@stevenson.digital</a>
+    <img
+      class="c-NavBar__logo"
+      src="~/assets/img/Logo_Black.png"
+      alt="Ollie Stevenson freelance web developer and designer logo"
+    >
+    <a
+      class="c-NavBar__email"
+      href="mailto:ollie@stevenson.digital"
+      @mouseover="toggleMouseHover(true)"
+      @mouseleave="toggleMouseHover(false)"
+    >ollie@stevenson.digital</a>
   </div>
 </template>
 
 <script>
+import toggleMouseHover from '~/mixins/utility'
+
 export default {
+  mixins: [
+    toggleMouseHover
+  ],
   data() {
     return {
       scrolled: false
