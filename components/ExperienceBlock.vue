@@ -37,7 +37,9 @@ export default {
 /* ===========================
   Block
 =========================== */
-.c-ExperienceBlock {}
+.c-ExperienceBlock {
+  // max-width: 75%;
+}
 
 /* ===========================
   Elements

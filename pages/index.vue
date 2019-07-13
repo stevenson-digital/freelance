@@ -19,14 +19,14 @@
             </div>
           </div>
           <div class="row">
-            <div class="[ columns medium-8 ] [ mb-50-20 ]">
+            <div class="[ columns medium-10 ] [ mb-50-20 ]">
               <ExperienceBlock
                 :heading="'Web Developer'"
                 :job-title="'Six, Leicester | Current Position'"
                 :text="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin tincidunt pharetra. Vivamus laoreet auctor est, et pretium lorem porttitor eget. Nullam id lectus in lacus convallis scelerisque. Vivamus tincidunt ex diam, a fermentum mi imperdiet vitae.'"
               />
             </div>
-            <div class="[ columns medium-8 medium-offset-2 ] [ mb-50-20 ]">
+            <div class="[ columns medium-10 ] [ mb-50-20 ]">
               <ExperienceBlock
                 :heading="'Development Team Leader'"
                 :job-title="'Sixth Story, Birmingham'"
@@ -35,14 +35,14 @@
             </div>
           </div>
           <div class="row">
-            <div class="[ columns medium-8 ] [ mb-50-20 ]">
+            <div class="[ columns medium-10 ] [ mb-50-20 ]">
               <ExperienceBlock
                 :heading="'Web Developer'"
                 :job-title="'Six, Leicester | Current Position'"
                 :text="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin tincidunt pharetra. Vivamus laoreet auctor est, et pretium lorem porttitor eget. Nullam id lectus in lacus convallis scelerisque. Vivamus tincidunt ex diam, a fermentum mi imperdiet vitae.'"
               />
             </div>
-            <div class="[ columns medium-8 medium-offset-2 ] [ mb-50-20 ]">
+            <div class="[ columns medium-10 ] [ mb-50-20 ]">
               <ExperienceBlock
                 :heading="'Junior Web Developer'"
                 :job-title="'Class Creative, Birmingham'"

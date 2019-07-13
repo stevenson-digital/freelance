@@ -9,7 +9,11 @@
                 <h1 class="c-Header__h1">
                   Freelance web developer<br>Birmingham.
                 </h1>
-                <p :class="['c-Header__0121', {'anim-in': animIn}]">
+                <p
+                  ref="parallax"
+                  :class="['c-Header__0121', {'anim-in': animIn}]"
+                  :style="{transform: translateY}"
+                >
                   <span>#</span>
                   <span>0</span>
                   <span>1</span>
@@ -30,20 +34,34 @@
 
 <script>
 import LineLink from '~/components/LineLink'
+import scrollParallax from '~/mixins/utility'
 
 export default {
   components: {
     LineLink
   },
+  mixins: [
+    scrollParallax
+  ],
   data() {
     return {
-      animIn: false
+      animIn: false,
+      translateY: 0
     }
   },
   created() {
     this.$nuxt.$on('triggerAnimIn', () => {
       this.animIn = true
     })
+  },
+  mounted() {
+    this.scrollParallax()
+  },
+  beforeMount() {
+    window.addEventListener('scroll', this.scrollParallax)
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.scrollParallax)
   }
 }
 </script>
@@ -103,7 +121,7 @@ export default {
   $animationDelay: 1;
   @for $i from 1 through 5 {
     span:nth-of-type(#{$i}) {
-      animation-delay: #{0.3+($i)/10}s;
+      animation-delay: #{0.3+($i)/15}s;
     }
   }
 
