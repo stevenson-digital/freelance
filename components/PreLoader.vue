@@ -1,5 +1,8 @@
 <template>
-  <div class="c-PreLoader" v-if="visible">
+  <div
+    v-if="visible"
+    class="c-PreLoader"
+  >
     <img
       class="c-PreLoader__logo"
       src="~/assets/img/Logo_White.png"
@@ -18,7 +21,8 @@ export default {
   mounted() {
     setTimeout(() => {
       this.visible = false
-    }, 4500) // Total of main anim delay + time
+      this.$nuxt.$emit('triggerAnimIn')
+    }, 3500) // Total of main anim delay + time
   }
 }
 </script>
@@ -43,7 +47,7 @@ export default {
   animation-name: fade-out;
   animation-fill-mode: both;
   animation-duration: .5s;
-  animation-delay: 4s; // Must be total of below animation delay + time
+  animation-delay: 3s; // Must be total of below animation delay + time
 }
 
 /* ===========================
@@ -51,9 +55,9 @@ export default {
 =========================== */
 .c-PreLoader__logo {
   width: 60px;
-  animation-name: fade-in-out;
+  animation-name: fade-in-out-delayed;
   animation-fill-mode: both;
-  animation-duration: 3s;
-  animation-delay: 1s;
+  animation-duration: 2.5s;
+  animation-delay: 0.5s;
 }
 </style>

@@ -9,8 +9,12 @@
                 <h1 class="c-Header__h1">
                   Freelance web developer<br>Birmingham.
                 </h1>
-                <p class="c-Header__0121">
-                  #0121
+                <p :class="['c-Header__0121', {'anim-in': animIn}]">
+                  <span>#</span>
+                  <span>0</span>
+                  <span>1</span>
+                  <span>2</span>
+                  <span>1</span>
                 </p>
                 <div class="c-Header__link">
                   <LineLink link="mailto:ollie@stevenson.digital" link-text="Enquire now" />
@@ -30,6 +34,16 @@ import LineLink from '~/components/LineLink'
 export default {
   components: {
     LineLink
+  },
+  data() {
+    return {
+      animIn: false
+    }
+  },
+  created() {
+    this.$nuxt.$on('triggerAnimIn', () => {
+      this.animIn = true
+    })
   }
 }
 </script>
@@ -80,6 +94,26 @@ export default {
   line-height: 13vw;
   font-family: $f-heading;
   height: 17.6vw;
+  display: flex;
+
+  span {
+    opacity: 0;
+  }
+
+  $animationDelay: 1;
+  @for $i from 1 through 5 {
+    span:nth-of-type(#{$i}) {
+      animation-delay: #{0.3+($i)/10}s;
+    }
+  }
+
+  &.anim-in {
+    span {
+      animation-name: fade-in-up;
+      animation-fill-mode: both;
+      animation-duration: .5s;
+    }
+  }
 
   @media (max-width: 1000px) {
     top: -3vw;
