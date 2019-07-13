@@ -1,12 +1,26 @@
 <template>
-  <footer class="[ c-Footer ] [ pt-110-50 pb-110-50 ]">
+  <footer
+    class="[ c-Footer ] [ pt-110-50 pb-110-50 ]"
+    @mouseover="toggleMouseWhite(true)"
+    @mouseleave="toggleMouseWhite(false)"
+  >
     <div class="container">
       <div class="row">
         <div class="columns">
-          <a class="[ c-Footer__link ] [ u-color-white f-heading-98-24 ]" :href="'tel:+447760668039'">
+          <a
+            class="[ c-Footer__link ] [ u-color-white f-heading-98-24 ]"
+            :href="'tel:+447760668039'"
+            @mouseover="toggleMouseHover(true)"
+            @mouseleave="toggleMouseHover(false)"
+          >
             Tel:<span class="f-heading-98-34--light">+447760668039</span>
           </a>
-          <a class="[ c-Footer__link ] [ u-color-white f-heading-98-24 ]" :href="'mailto:ollie@stevenson.digital'">
+          <a
+            class="[ c-Footer__link ] [ u-color-white f-heading-98-24 ]"
+            :href="'mailto:ollie@stevenson.digital'"
+            @mouseover="toggleMouseHover(true)"
+            @mouseleave="toggleMouseHover(false)"
+          >
             Email:<span class="f-heading-98-34--light">ollie@stevenson.digital</span>
           </a>
         </div>
@@ -16,8 +30,14 @@
 </template>
 
 <script>
-export default {
+import toggleMouseHover from '~/mixins/utility'
+import toggleMouseWhite from '~/mixins/utility'
 
+export default {
+  mixins: [
+    toggleMouseHover,
+    toggleMouseWhite
+  ]
 }
 </script>
 

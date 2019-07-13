@@ -1,11 +1,21 @@
 <template>
-  <a class="c-LineLink" :href="link">
+  <a
+    class="c-LineLink"
+    :href="link"
+    @mouseover="toggleMouseHover(true)"
+    @mouseleave="toggleMouseHover(false)"
+  >
     {{ linkText }}
   </a>
 </template>
 
 <script>
+import toggleMouseHover from '~/mixins/utility'
+
 export default {
+  mixins: [
+    toggleMouseHover
+  ],
   props: {
     link: {
       type: String,

@@ -1,7 +1,15 @@
 <template>
   <div>
-    <div id="c-CustomCursor" :class="[{'hover': hover}, {'white': white}]" :style="[{top: outerPosY + 'px'}, {left: outerPosX + 'px'}]" />
-    <div id="c-CustomCursor__inner" :style="[{top: posY + 'px'}, {left: posX + 'px'}]" />
+    <div
+      id="c-CustomCursor"
+      :class="[{'hover': hover}, {'white': white}]"
+      :style="[{top: outerPosY + 'px'}, {left: outerPosX + 'px'}]"
+    />
+    <div
+      id="c-CustomCursor__inner"
+      :class="{'white': white}"
+      :style="[{top: posY + 'px'}, {left: posX + 'px'}]"
+    />
   </div>
 </template>
 
@@ -13,7 +21,8 @@ export default {
       outerPosY: 0,
       posX: 0,
       posY: 0,
-      hover: false
+      hover: false,
+      white: false
     }
   },
   beforeMount() {
@@ -29,6 +38,9 @@ export default {
   created() {
     this.$nuxt.$on('toggleMouseHover', (state) => {
       this.hover = state
+    })
+    this.$nuxt.$on('toggleMouseWhite', (state) => {
+      this.white = state
     })
   },
   methods: {
@@ -110,5 +122,9 @@ body {
   width: 10px;
   height: 10px;
   background-color: $c-black;
+
+  &.white {
+    background-color: $c-white;
+  }
 }
 </style>

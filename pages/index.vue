@@ -2,7 +2,11 @@
   <div>
     <Header />
     <main>
-      <section class="[ l-Experience ] [ pt-110-50 pb-110-50 ] [ u-color-white ]">
+      <section
+        class="[ l-Experience ] [ pt-110-50 pb-110-50 ] [ u-color-white ]"
+        @mouseover="toggleMouseWhite(true)"
+        @mouseleave="toggleMouseWhite(false)"
+      >
         <div class="container">
           <div class="row">
             <div class="columns medium-10">
@@ -49,59 +53,18 @@
         </div>
       </section>
 
-      <section class="l-Offering">
+      <section
+        class="l-Offering"
+        @mouseover="toggleMouseWhite(true)"
+        @mouseleave="toggleMouseWhite(false)"
+      >
         <div class="l-Offering__back-panel">
-          <marquee-text :repeat="10" :duration="12">
-            <p class="[ f-heading-98-34 ] [ u-color-white ]">
-              What I can offer you.
-            </p>
-          </marquee-text>
-          <marquee-text :repeat="10" :duration="9">
-            <p class="[ f-heading-98-34 ] [ u-color-white ]">
-              What I can offer you.
-            </p>
-          </marquee-text>
-          <marquee-text :repeat="10" :duration="15">
-            <p class="[ f-heading-98-34 ] [ u-color-white ]">
-              What I can offer you.
-            </p>
-          </marquee-text>
-          <marquee-text :repeat="10" :duration="12">
-            <p class="[ f-heading-98-34 ] [ u-color-white ]">
-              What I can offer you.
-            </p>
-          </marquee-text>
-          <marquee-text :repeat="10" :duration="7">
-            <p class="[ f-heading-98-34 ] [ u-color-white ]">
-              What I can offer you.
-            </p>
-          </marquee-text>
-          <marquee-text :repeat="10" :duration="10">
-            <p class="[ f-heading-98-34 ] [ u-color-white ]">
-              What I can offer you.
-            </p>
-          </marquee-text>
-          <marquee-text :repeat="10" :duration="13">
-            <p class="[ f-heading-98-34 ] [ u-color-white ]">
-              What I can offer you.
-            </p>
-          </marquee-text>
-          <marquee-text :repeat="10" :duration="15">
-            <p class="[ f-heading-98-34 ] [ u-color-white ]">
-              What I can offer you.
-            </p>
-          </marquee-text>
-          <marquee-text :repeat="10" :duration="10">
-            <p class="[ f-heading-98-34 ] [ u-color-white ]">
-              What I can offer you.
-            </p>
-          </marquee-text>
-          <marquee-text :repeat="10" :duration="15">
-            <p class="[ f-heading-98-34 ] [ u-color-white ]">
-              What I can offer you.
-            </p>
-          </marquee-text>
-          <marquee-text :repeat="10" :duration="12">
+          <marquee-text
+            v-for="(speed, index) in speeds"
+            :key="`marquee-${index}`"
+            :repeat="10"
+            :duration="speed"
+          >
             <p class="[ f-heading-98-34 ] [ u-color-white ]">
               What I can offer you.
             </p>
@@ -109,7 +72,11 @@
         </div>
         <div class="l-Offering__gradient" />
         <div class="l-Offering__gradient" />
-        <div class="l-Offering__top-panel">
+        <div
+          class="l-Offering__top-panel"
+          @mouseover="toggleMouseWhite(false)"
+          @mouseleave="toggleMouseWhite(true)"
+        >
           <div class="l-Offering__top-panel-inner">
             <p class="[ l-Offering__main-txt ] [ f-light-62-46 ]">
               Web development with cutting edge technoligies. I build websites; good ones, not shit ones.<br><br>High end design coupled with lightning fast code is what you’ll get.<br><br>Ecommerce platforms, brochure websites and landing pages that get you the street cred you’ve been craving.<br><br>High fancyness = high prices £££
@@ -148,12 +115,21 @@
 import Header from '~/components/Header'
 import ExperienceBlock from '~/components/ExperienceBlock'
 import LineLink from '~/components/LineLink'
+import toggleMouseWhite from '~/mixins/utility'
 
 export default {
   components: {
     Header,
     ExperienceBlock,
     LineLink
+  },
+  mixins: [
+    toggleMouseWhite
+  ],
+  data() {
+    return {
+      speeds: [12, 9, 15, 12, 7, 10, 13, 15, 10, 15, 12]
+    }
   }
 }
 </script>
