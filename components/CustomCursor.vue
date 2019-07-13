@@ -114,7 +114,8 @@ body {
   }
 
   &.hover {
-    transform: scale(0.6);
+    opacity: 0;
+    transform: scale(0.5);
   }
 }
 

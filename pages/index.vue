@@ -53,11 +53,12 @@
         </div>
       </section>
 
-      <section
-        class="l-Offering"
-        @mouseover="toggleMouseWhite(true)"
-        @mouseleave="toggleMouseWhite(false)"
-      >
+      <section class="l-Offering">
+        <div
+          class="l-Offering__cursor-trigger"
+          @mouseover="toggleMouseWhite(true)"
+          @mouseleave="toggleMouseWhite(false)"
+        />
         <div class="l-Offering__back-panel">
           <marquee-text
             v-for="(speed, index) in speeds"
@@ -75,7 +76,6 @@
         <div
           class="l-Offering__top-panel"
           @mouseover="toggleMouseWhite(false)"
-          @mouseleave="toggleMouseWhite(true)"
         >
           <div class="l-Offering__top-panel-inner">
             <p class="[ l-Offering__main-txt ] [ f-light-62-46 ]">
@@ -173,6 +173,15 @@ export default {
   background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 75%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 75%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.l-Offering__cursor-trigger {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  @include v-spacing(height, 90px, 180px); // Must match '.l-Offering__top-panel' padding-top
 }
 
 .l-Offering__top-panel {
