@@ -105,7 +105,7 @@ body {
   width: 30px;
   height: 30px;
   border: 1px solid $c-black;
-  z-index: 999999;
+  z-index: $z-cursor;
   transition-duration: 150ms;
   transition-timing-function: ease-out;
 
