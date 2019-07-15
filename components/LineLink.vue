@@ -40,6 +40,7 @@ export default {
   font-family: $f-heading;
   text-decoration: none;
   color: $c-black;
+  transition: opacity $t-standard;
 
   &:after {
     content: '';
@@ -54,6 +55,8 @@ export default {
   }
 
   &:hover {
+    opacity: 0.5;
+
     &:after {
       transform: translateX(0);
     }

@@ -121,7 +121,7 @@ export default {
   $animationDelay: 1;
   @for $i from 1 through 5 {
     span:nth-of-type(#{$i}) {
-      animation-delay: #{0.3+($i)/15}s;
+      animation-delay: #{0.1+($i)/15}s;
     }
   }
 
