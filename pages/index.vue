@@ -23,14 +23,14 @@
               <ExperienceBlock
                 :heading="'Web Developer'"
                 :job-title="'Six, Leicester | Current Position'"
-                :text="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin tincidunt pharetra. Vivamus laoreet auctor est, et pretium lorem porttitor eget. Nullam id lectus in lacus convallis scelerisque. Vivamus tincidunt ex diam, a fermentum mi imperdiet vitae.'"
+                :text="'As an integral member of the growing team, I am currently helping to facilitate a shift in the base technology stack to a headless, Vue.js (Nuxt.js) setup. I have also worked closely with other team members on projects to create an effective component-based setup using OOP in our more traditional WordPress setup.'"
               />
             </div>
             <div class="[ columns medium-10 ] [ mb-50-20 ]">
               <ExperienceBlock
                 :heading="'Development Team Leader'"
                 :job-title="'Sixth Story, Birmingham'"
-                :text="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin tincidunt pharetra. Vivamus laoreet auctor est, et pretium lorem porttitor eget. Nullam id lectus in lacus convallis scelerisque. Vivamus tincidunt ex diam, a fermentum mi imperdiet vitae.'"
+                :text="'As the Development Team Leader, my main responsibilities were to manage the team\'s schedules, interview new team members, act as a final quality assurance/control point, enforce and create systems and process to maintain the highest quality of work and most importantly to be there for all team members if they need help and/or guidance.'"
               />
             </div>
           </div>
@@ -38,15 +38,15 @@
             <div class="[ columns medium-10 ] [ mb-50-20 ]">
               <ExperienceBlock
                 :heading="'Web Developer'"
-                :job-title="'Six, Leicester | Current Position'"
-                :text="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin tincidunt pharetra. Vivamus laoreet auctor est, et pretium lorem porttitor eget. Nullam id lectus in lacus convallis scelerisque. Vivamus tincidunt ex diam, a fermentum mi imperdiet vitae.'"
+                :job-title="'Sixth Story, Birmingham'"
+                :text="'As a Web Developer, I was expected to take a design (from either a PSD or InVision) and develop it into a fully functional and responsive custom WordPress website. Here I introduced many coding/quality standards to web builds, for example, a QA checklist that ensures items like favicons and 404 pages are not missed, comments are removed etc. I also introduced a WordPress \'starter template\' which was a bare-bones blank install with various standard setups prebuilt to save time.'"
               />
             </div>
             <div class="[ columns medium-10 ] [ mb-50-20 ]">
               <ExperienceBlock
                 :heading="'Junior Web Developer'"
                 :job-title="'Class Creative, Birmingham'"
-                :text="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin tincidunt pharetra. Vivamus laoreet auctor est, et pretium lorem porttitor eget. Nullam id lectus in lacus convallis scelerisque. Vivamus tincidunt ex diam, a fermentum mi imperdiet vitae.'"
+                :text="'This is where I learnt the vast majority of my basic web development skills. I started at Class Creative having never built a custom WordPress site and within a few weeks was trusted with full client builds. Here I learned how to use \'the loop\', custom post types, the principles of responsive coding, full browser testing and WooCommerce. I worked here for 9 months as my industry placement at university; I have a lot to thank Class Creative for.'"
               />
             </div>
           </div>

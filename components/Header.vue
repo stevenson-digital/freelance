@@ -29,16 +29,19 @@
         </div>
       </div>
     </div>
+    <LargeArrow />
   </header>
 </template>
 
 <script>
 import LineLink from '~/components/LineLink'
+import LargeArrow from '~/components/LargeArrow'
 import scrollParallax from '~/mixins/utility'
 
 export default {
   components: {
-    LineLink
+    LineLink,
+    LargeArrow
   },
   mixins: [
     scrollParallax
@@ -129,7 +132,7 @@ export default {
     span {
       animation-name: fade-in-up;
       animation-fill-mode: both;
-      animation-duration: .5s;
+      animation-duration: 500ms;
     }
   }
 

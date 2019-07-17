@@ -1,3 +1,4 @@
+/* eslint-disable */
 export default {
   methods: {
     toggleMouseHover(state) {
@@ -8,7 +9,7 @@ export default {
     },
     scrollParallax() {
       if (this.$refs.parallax) {
-        const speed = 6 // Speed: 0-10 with 0 being the most amount of parallax
+        const speed = (this.$refs.parallax.getAttribute('data-speed')) ? this.$refs.parallax.getAttribute('data-speed') : 6 // Speed: 0-10 with 0 being the most amount of parallax
         const st = window.pageYOffset
         const elTop = this.$refs.parallax.offsetTop
         const amountScrolled = st - elTop
