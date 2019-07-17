@@ -36,7 +36,7 @@
 <script>
 import LineLink from '~/components/LineLink'
 import LargeArrow from '~/components/LargeArrow'
-import scrollParallax from '~/mixins/utility'
+import { utility } from '~/mixins/utility'
 
 export default {
   components: {
@@ -44,7 +44,7 @@ export default {
     LargeArrow
   },
   mixins: [
-    scrollParallax
+    utility
   ],
   data() {
     return {

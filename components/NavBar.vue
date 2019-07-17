@@ -15,11 +15,11 @@
 </template>
 
 <script>
-import toggleMouseHover from '~/mixins/utility'
+import { utility } from '~/mixins/utility'
 
 export default {
   mixins: [
-    toggleMouseHover
+    utility
   ],
   data() {
     return {

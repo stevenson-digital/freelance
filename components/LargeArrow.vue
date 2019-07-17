@@ -18,11 +18,11 @@
 </template>
 
 <script>
-import scrollParallax from '~/mixins/utility'
+import { utility } from '~/mixins/utility'
 
 export default {
   mixins: [
-    scrollParallax
+    utility
   ],
   data() {
     return {

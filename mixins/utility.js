@@ -1,5 +1,5 @@
 /* eslint-disable */
-export default {
+export const utility = {
   methods: {
     toggleMouseHover(state) {
       this.$nuxt.$emit('toggleMouseHover', state)

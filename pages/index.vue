@@ -115,7 +115,7 @@
 import Header from '~/components/Header'
 import ExperienceBlock from '~/components/ExperienceBlock'
 import LineLink from '~/components/LineLink'
-import toggleMouseWhite from '~/mixins/utility'
+import { utility } from '~/mixins/utility'
 
 export default {
   components: {
@@ -124,7 +124,7 @@ export default {
     LineLink
   },
   mixins: [
-    toggleMouseWhite
+    utility
   ],
   data() {
     return {

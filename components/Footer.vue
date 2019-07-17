@@ -30,13 +30,11 @@
 </template>
 
 <script>
-import toggleMouseHover from '~/mixins/utility'
-import toggleMouseWhite from '~/mixins/utility'
+import { utility } from '~/mixins/utility'
 
 export default {
   mixins: [
-    toggleMouseHover,
-    toggleMouseWhite
+    utility
   ]
 }
 </script>
