@@ -2,19 +2,19 @@
   <a
     class="c-LineLink"
     :href="link"
-    @mouseover="toggleMouseHover(true)"
-    @mouseleave="toggleMouseHover(false)"
+    @mouseover="toggleCursorHover(true)"
+    @mouseleave="toggleCursorHover(false)"
   >
     {{ linkText }}
   </a>
 </template>
 
 <script>
-import { utility } from '~/mixins/utility'
+import { cursor } from '~/mixins/cursor'
 
 export default {
   mixins: [
-    utility
+    cursor
   ],
   props: {
     link: {

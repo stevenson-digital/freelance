@@ -18,11 +18,11 @@
 </template>
 
 <script>
-import { utility } from '~/mixins/utility'
+import { parallax } from '~/mixins/parallax'
 
 export default {
   mixins: [
-    utility
+    parallax
   ],
   data() {
     return {

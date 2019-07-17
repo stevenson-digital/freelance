@@ -4,8 +4,8 @@
     <main>
       <section
         class="[ l-Experience ] [ pt-110-50 pb-110-50 ] [ u-color-white ]"
-        @mouseover="toggleMouseWhite(true)"
-        @mouseleave="toggleMouseWhite(false)"
+        @mouseover="toggleCursorWhite(true)"
+        @mouseleave="toggleCursorWhite(false)"
       >
         <div class="container">
           <div class="row">
@@ -56,8 +56,8 @@
       <section class="l-Offering">
         <div
           class="l-Offering__cursor-trigger"
-          @mouseover="toggleMouseWhite(true)"
-          @mouseleave="toggleMouseWhite(false)"
+          @mouseover="toggleCursorWhite(true)"
+          @mouseleave="toggleCursorWhite(false)"
         />
         <div class="l-Offering__back-panel">
           <marquee-text
@@ -75,7 +75,7 @@
         <div class="l-Offering__gradient" />
         <div
           class="l-Offering__top-panel"
-          @mouseover="toggleMouseWhite(false)"
+          @mouseover="toggleCursorWhite(false)"
         >
           <div class="l-Offering__top-panel-inner">
             <p class="[ l-Offering__main-txt ] [ f-light-62-46 ]">
@@ -115,7 +115,7 @@
 import Header from '~/components/Header'
 import ExperienceBlock from '~/components/ExperienceBlock'
 import LineLink from '~/components/LineLink'
-import { utility } from '~/mixins/utility'
+import { cursor } from '~/mixins/cursor'
 
 export default {
   components: {
@@ -124,7 +124,7 @@ export default {
     LineLink
   },
   mixins: [
-    utility
+    cursor
   ],
   data() {
     return {

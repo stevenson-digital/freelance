@@ -1,8 +1,8 @@
 <template>
   <footer
     class="[ c-Footer ] [ pt-110-50 pb-110-50 ]"
-    @mouseover="toggleMouseWhite(true)"
-    @mouseleave="toggleMouseWhite(false)"
+    @mouseover="toggleCursorWhite(true)"
+    @mouseleave="toggleCursorWhite(false)"
   >
     <div class="container">
       <div class="row">
@@ -10,16 +10,16 @@
           <a
             class="[ c-Footer__link ] [ u-color-white f-heading-98-24 ]"
             :href="'tel:+447760668039'"
-            @mouseover="toggleMouseHover(true)"
-            @mouseleave="toggleMouseHover(false)"
+            @mouseover="toggleCursorHover(true)"
+            @mouseleave="toggleCursorHover(false)"
           >
             Tel:<span class="f-heading-98-34--light">+447760668039</span>
           </a>
           <a
             class="[ c-Footer__link ] [ u-color-white f-heading-98-24 ]"
             :href="'mailto:ollie@stevenson.digital'"
-            @mouseover="toggleMouseHover(true)"
-            @mouseleave="toggleMouseHover(false)"
+            @mouseover="toggleCursorHover(true)"
+            @mouseleave="toggleCursorHover(false)"
           >
             Email:<span class="f-heading-98-34--light">ollie@stevenson.digital</span>
           </a>
@@ -30,11 +30,11 @@
 </template>
 
 <script>
-import { utility } from '~/mixins/utility'
+import { cursor } from '~/mixins/cursor'
 
 export default {
   mixins: [
-    utility
+    cursor
   ]
 }
 </script>

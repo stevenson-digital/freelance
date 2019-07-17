@@ -8,18 +8,18 @@
     <a
       class="c-NavBar__email"
       href="mailto:ollie@stevenson.digital"
-      @mouseover="toggleMouseHover(true)"
-      @mouseleave="toggleMouseHover(false)"
+      @mouseover="toggleCursorHover(true)"
+      @mouseleave="toggleCursorHover(false)"
     >ollie@stevenson.digital</a>
   </div>
 </template>
 
 <script>
-import { utility } from '~/mixins/utility'
+import { cursor } from '~/mixins/cursor'
 
 export default {
   mixins: [
-    utility
+    cursor
   ],
   data() {
     return {

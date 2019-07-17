@@ -36,10 +36,10 @@ export default {
     })
   },
   created() {
-    this.$nuxt.$on('toggleMouseHover', (state) => {
+    this.$nuxt.$on('toggleCursorHover', (state) => {
       this.hover = state
     })
-    this.$nuxt.$on('toggleMouseWhite', (state) => {
+    this.$nuxt.$on('toggleCursorWhite', (state) => {
       this.white = state
     })
   },
