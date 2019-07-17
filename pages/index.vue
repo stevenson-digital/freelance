@@ -23,7 +23,7 @@
               <ExperienceBlock
                 :heading="'Web Developer'"
                 :job-title="'Six, Leicester | Current Position'"
-                :text="'As an integral member of the growing team, I am currently helping to facilitate a shift in the base technology stack to a headless, Vue.js (Nuxt.js) setup. I have also worked closely with other team members on projects to create an effective component-based setup using OOP in our more traditional WordPress setup.'"
+                :text="'As an integral member of the growing team, I am currently helping to facilitate a shift in the base technology stack to a headless, Vue.js (Nuxt.js) setup. I have also worked closely with other team members on projects to create an effective component-based workflow using OOP in our more traditional WordPress builds.'"
               />
             </div>
             <div class="[ columns medium-10 ] [ mb-50-20 ]">
