@@ -13,7 +13,7 @@
             @mouseover="toggleCursorHover(true)"
             @mouseleave="toggleCursorHover(false)"
           >
-            Tel:<span class="f-heading-98-34--light">+447760668039</span>
+            Tel:<span class="f-heading-98-24--light">+447760668039</span>
           </a>
           <a
             class="[ c-Footer__link ] [ u-color-white f-heading-98-24 ]"
@@ -21,7 +21,7 @@
             @mouseover="toggleCursorHover(true)"
             @mouseleave="toggleCursorHover(false)"
           >
-            Email:<span class="f-heading-98-34--light">ollie@stevenson.digital</span>
+            Email:<span class="f-heading-98-24--light">ollie@stevenson.digital</span>
           </a>
         </div>
       </div>

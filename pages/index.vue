@@ -10,7 +10,7 @@
         <div class="container">
           <div class="row">
             <div class="columns medium-10">
-              <h2 class="[ l-Experience__h2 ] [ f-heading-98-34 ]">
+              <h2 class="[ l-Experience__h2 ] [ f-heading-98-52 ]">
                 Experience.
               </h2>
               <p class="mb-110-50">
@@ -66,7 +66,7 @@
             :repeat="10"
             :duration="speed"
           >
-            <p class="[ f-heading-98-34 ] [ u-color-white ]">
+            <p class="[ f-heading-98-52 ] [ u-color-white ]">
               What I can offer you.
             </p>
           </marquee-text>
@@ -195,6 +195,12 @@ export default {
   margin-left: $container-padding;
   background-color: $c-white;
   padding: 80px $container-padding;
+
+  @media (max-width: $w-grid-small) {
+    width: calc(100% - (#{$container-padding-small} * 4));
+    margin-left: $container-padding-small;
+    padding: $container-padding-small;
+  }
 }
 
 // Work Samples Section
@@ -204,6 +210,11 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 980px) {
+    height: auto;
+    padding: 180px 0;
+  }
 }
 
 .l-WorkSamples__txt-top {
@@ -218,11 +229,27 @@ export default {
 }
 
 .l-WorkSamples__line {
-  height: 5px;
   background-color: black;
   flex: 1;
-  margin-left: 60px;
-  margin-top: 45px;
+  @include v-spacing(height, 2px, 5px);
+  @include v-spacing(margin-top, 10px, 45px);
+  @include v-spacing(margin-left, 16px, 60px);
+
+  @media (max-width: 1024px) {
+    margin-top: 25px;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 16px;
+  }
+
+  @media (max-width: 700px) {
+    margin-top: 12px;
+  }
+
+  @media (max-width: 640px) {
+    margin-top: 10px;
+  }
 }
 
 .l-WorkSamples__link {

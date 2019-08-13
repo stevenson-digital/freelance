@@ -32,10 +32,10 @@ body {
   font-style: normal;
 }
 
-.f-heading-98-34 {
+.f-heading-98-52 {
   font-family: $f-heading;
   line-height: 1;
-  @include v-spacing(font-size, 34px, 98px);
+  @include v-spacing(font-size, 52px, 98px);
 
   &--light {
     font-family: $f-body-light;
