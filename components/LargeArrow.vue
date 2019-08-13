@@ -66,6 +66,21 @@ export default {
     animation-duration: 500ms;
     animation-delay: 350ms;
   }
+
+  @media(max-width: 1300px) {
+    right: 40%;
+    bottom: 40%;
+  }
+
+  @media(max-width: 980px) {
+    right: 45%;
+    bottom: 35%;
+    z-index: -1;
+  }
+
+  @media(max-width: 480px) {
+    bottom: 45%;
+  }
 }
 
 /* ===========================
@@ -78,6 +93,10 @@ export default {
   background: $c-black;
   top: 0;
   left: 0;
+
+  @media(max-width: 980px) {
+    background: $c-light-grey;
+  }
 
   &:nth-of-type(2),
   &:nth-of-type(3) {
