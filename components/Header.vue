@@ -156,8 +156,16 @@ export default {
     top: -8vw;
   }
 
+  @media (max-width: 390px) {
+    top: -9vw;
+  }
+
+  @media (max-width: 376px) {
+    top: -10vw;
+  }
+
   @media (max-width: 350px) {
-    top: -11vw;
+    top: -11.5vw;
   }
 }
 
