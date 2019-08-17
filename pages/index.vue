@@ -53,13 +53,13 @@
         </div>
       </section>
 
-      <!-- <section class="l-Offering">
-        <div
+      <section class="l-Offering">
+        <!-- <div
           class="l-Offering__cursor-trigger"
           @mouseover="toggleCursorWhite(true)"
           @mouseleave="toggleCursorWhite(false)"
-        />
-        <div class="l-Offering__back-panel">
+        /> -->
+        <!-- <div class="l-Offering__back-panel">
           <marquee-text
             v-for="(speed, index) in speeds"
             :key="`marquee-${index}`"
@@ -70,10 +70,10 @@
               What I can offer you.
             </p>
           </marquee-text>
-        </div>
-        <div class="l-Offering__gradient" />
-        <div class="l-Offering__gradient" />
-        <div
+        </div> -->
+        <!-- <div class="l-Offering__gradient" />
+        <div class="l-Offering__gradient" /> -->
+        <!-- <div
           class="l-Offering__top-panel"
           @mouseover="toggleCursorWhite(false)"
         >
@@ -82,8 +82,8 @@
               Web development with cutting edge technoligies. I build websites; good ones, not shit ones.<br><br>High end design coupled with lightning fast code is what you’ll get.<br><br>Ecommerce platforms, brochure websites and landing pages that get you the street cred you’ve been craving.<br><br>High fancyness = high prices £££
             </p>
           </div>
-        </div>
-      </section> -->
+        </div> -->
+      </section>
 
       <section class="l-WorkSamples">
         <div class="container">
