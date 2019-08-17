@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <!-- <main>
+    <main>
       <section
         class="[ l-Experience ] [ pt-110-50 pb-110-50 ] [ u-color-white ]"
         @mouseover="toggleCursorWhite(true)"
@@ -53,7 +53,7 @@
         </div>
       </section>
 
-      <section class="l-Offering">
+      <!-- <section class="l-Offering">
         <div
           class="l-Offering__cursor-trigger"
           @mouseover="toggleCursorWhite(true)"
@@ -106,8 +106,8 @@
             </div>
           </div>
         </div>
-      </section>
-    </main> -->
+      </section> -->
+    </main>
   </div>
 </template>
 
