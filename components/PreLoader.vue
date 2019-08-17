@@ -20,10 +20,10 @@ export default {
   },
   mounted() {
     setTimeout(() => {
-      this.$nuxt.$emit('triggerAnimIn')
+      // this.$nuxt.$emit('triggerAnimIn')
     }, 3100) // Animation must start before fade out so they visually match
     setTimeout(() => {
-      this.visible = false
+      // this.visible = false
     }, 3500) // Total of main anim delay + time
   }
 }
