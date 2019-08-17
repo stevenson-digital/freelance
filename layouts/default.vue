@@ -4,7 +4,7 @@
     <NavBar />
     <!-- <nuxt /> -->
     <!-- <Footer /> -->
-    <!-- <CustomCursor /> -->
+    <CustomCursor />
   </div>
 </template>
 
