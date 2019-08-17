@@ -54,11 +54,11 @@
       </section>
 
       <section class="l-Offering">
-        <!-- <div
+        <div
           class="l-Offering__cursor-trigger"
           @mouseover="toggleCursorWhite(true)"
           @mouseleave="toggleCursorWhite(false)"
-        /> -->
+        />
         <!-- <div class="l-Offering__back-panel">
           <marquee-text
             v-for="(speed, index) in speeds"
