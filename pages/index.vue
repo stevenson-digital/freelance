@@ -71,8 +71,8 @@
             </p>
           </marquee-text>
         </div> -->
-        <!-- <div class="l-Offering__gradient" />
-        <div class="l-Offering__gradient" /> -->
+        <div class="l-Offering__gradient" />
+        <div class="l-Offering__gradient" />
         <div
           class="l-Offering__top-panel"
           @mouseover="toggleCursorWhite(false)"
