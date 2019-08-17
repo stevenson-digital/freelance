@@ -59,8 +59,8 @@
           @mouseover="toggleCursorWhite(true)"
           @mouseleave="toggleCursorWhite(false)"
         />
-        <!-- <div class="l-Offering__back-panel">
-          <marquee-text
+        <div class="l-Offering__back-panel">
+          <!-- <marquee-text
             v-for="(speed, index) in speeds"
             :key="`marquee-${index}`"
             :repeat="10"
@@ -69,8 +69,63 @@
             <p class="[ f-heading-98-52 ] [ u-color-white ]">
               What I can offer you.
             </p>
+          </marquee-text> -->
+          <marquee-text :repeat="10" :duration="12" >
+            <p class="[ f-heading-98-52 ] [ u-color-white ]">
+              What I can offer you.
+            </p>
           </marquee-text>
-        </div> -->
+          <marquee-text :repeat="10" :duration="9" >
+            <p class="[ f-heading-98-52 ] [ u-color-white ]">
+              What I can offer you.
+            </p>
+          </marquee-text>
+          <marquee-text :repeat="10" :duration="15" >
+            <p class="[ f-heading-98-52 ] [ u-color-white ]">
+              What I can offer you.
+            </p>
+          </marquee-text>
+          <marquee-text :repeat="10" :duration="12" >
+            <p class="[ f-heading-98-52 ] [ u-color-white ]">
+              What I can offer you.
+            </p>
+          </marquee-text>
+          <marquee-text :repeat="10" :duration="7" >
+            <p class="[ f-heading-98-52 ] [ u-color-white ]">
+              What I can offer you.
+            </p>
+          </marquee-text>
+          <marquee-text :repeat="10" :duration="10" >
+            <p class="[ f-heading-98-52 ] [ u-color-white ]">
+              What I can offer you.
+            </p>
+          </marquee-text>
+          <marquee-text :repeat="10" :duration="13" >
+            <p class="[ f-heading-98-52 ] [ u-color-white ]">
+              What I can offer you.
+            </p>
+          </marquee-text>
+          <marquee-text :repeat="10" :duration="15" >
+            <p class="[ f-heading-98-52 ] [ u-color-white ]">
+              What I can offer you.
+            </p>
+          </marquee-text>
+          <marquee-text :repeat="10" :duration="10" >
+            <p class="[ f-heading-98-52 ] [ u-color-white ]">
+              What I can offer you.
+            </p>
+          </marquee-text>
+          <marquee-text :repeat="10" :duration="15" >
+            <p class="[ f-heading-98-52 ] [ u-color-white ]">
+              What I can offer you.
+            </p>
+          </marquee-text>
+          <marquee-text :repeat="10" :duration="12" >
+            <p class="[ f-heading-98-52 ] [ u-color-white ]">
+              What I can offer you.
+            </p>
+          </marquee-text>
+        </div>
         <div class="l-Offering__gradient" />
         <div class="l-Offering__gradient" />
         <div
