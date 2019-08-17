@@ -1,10 +1,10 @@
 <template>
   <div>
-    <PreLoader />
-    <NavBar />
-    <nuxt />
-    <Footer />
-    <CustomCursor />
+    <!-- <PreLoader /> -->
+    <!-- <NavBar /> -->
+    <!-- <nuxt /> -->
+    <!-- <Footer /> -->
+    <!-- <CustomCursor /> -->
   </div>
 </template>
 

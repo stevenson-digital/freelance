@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header />
+    <!-- <Header />
     <main>
       <section
         class="[ l-Experience ] [ pt-110-50 pb-110-50 ] [ u-color-white ]"
@@ -107,7 +107,7 @@
           </div>
         </div>
       </section>
-    </main>
+    </main> -->
   </div>
 </template>
 
