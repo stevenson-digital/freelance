@@ -70,12 +70,15 @@
               What I can offer you.
             </p>
           </marquee-text> -->
-          <p
+          <!-- <p
             v-for="(speed, index) in speeds"
             :key="`marquee-${index}`"
             class="[ f-heading-98-52 ] [ u-color-white ]">
             What I can offer you.
-          </p>
+          </p> -->
+          <marquee-text :repeat="10" :duration="speed">
+            What I can offer you.
+          </marquee-text>
         </div>
         <div class="l-Offering__gradient" />
         <div class="l-Offering__gradient" />
