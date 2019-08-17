@@ -2,7 +2,7 @@
   <div>
     <PreLoader />
     <NavBar />
-    <!-- <nuxt /> -->
+    <nuxt />
     <Footer />
     <CustomCursor />
   </div>
