@@ -73,7 +73,7 @@
         </div> -->
         <!-- <div class="l-Offering__gradient" />
         <div class="l-Offering__gradient" /> -->
-        <!-- <div
+        <div
           class="l-Offering__top-panel"
           @mouseover="toggleCursorWhite(false)"
         >
@@ -82,7 +82,7 @@
               Web development with cutting edge technoligies. I build websites; good ones, not shit ones.<br><br>High end design coupled with lightning fast code is what you’ll get.<br><br>Ecommerce platforms, brochure websites and landing pages that get you the street cred you’ve been craving.<br><br>High fancyness = high prices £££
             </p>
           </div>
-        </div> -->
+        </div>
       </section>
 
       <section class="l-WorkSamples">
