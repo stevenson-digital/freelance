@@ -17,15 +17,15 @@ export default {
     return {
       visible: true
     }
-  },
-  mounted() {
-    setTimeout(() => {
-      // this.$nuxt.$emit('triggerAnimIn')
-    }, 3100) // Animation must start before fade out so they visually match
-    setTimeout(() => {
-      // this.visible = false
-    }, 3500) // Total of main anim delay + time
   }
+  // mounted() {
+  //   setTimeout(() => {
+  //     this.$nuxt.$emit('triggerAnimIn')
+  //   }, 3100) // Animation must start before fade out so they visually match
+  //   setTimeout(() => {
+  //     this.visible = false
+  //   }, 3500) // Total of main anim delay + time
+  // }
 }
 </script>
 
@@ -46,10 +46,10 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation-name: fade-out;
-  animation-fill-mode: both;
-  animation-duration: .5s;
-  animation-delay: 3s; // Must be total of below animation delay + time
+  // animation-name: fade-out;
+  // animation-fill-mode: both;
+  // animation-duration: .5s;
+  // animation-delay: 3s; // Must be total of below animation delay + time
 }
 
 /* ===========================
@@ -57,7 +57,8 @@ export default {
 =========================== */
 .c-PreLoader__logo {
   width: 60px;
-  animation-name: fade-in-out-delayed;
+  // animation-name: fade-in-out-delayed;
+  animation-name: fade-in;
   animation-fill-mode: both;
   animation-duration: 2.5s;
   animation-delay: 0.5s;

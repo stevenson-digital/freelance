@@ -53,9 +53,9 @@ export default {
     }
   },
   created() {
-    // this.$nuxt.$on('triggerAnimIn', () => {
-    //   this.animIn = true
-    // })
+    this.$nuxt.$on('triggerAnimIn', () => {
+      this.animIn = true
+    })
   },
   mounted() {
     this.scrollParallax()
