@@ -53,7 +53,7 @@
         </div>
       </section>
 
-      <section class="l-Offering">
+      <!-- <section class="l-Offering">
         <div
           class="l-Offering__cursor-trigger"
           @mouseover="toggleCursorWhite(true)"
@@ -83,9 +83,9 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <!-- <section class="l-WorkSamples">
+      <section class="l-WorkSamples">
         <div class="container">
           <div class="row">
             <div class="columns">
@@ -106,7 +106,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
   </div>
 </template>
