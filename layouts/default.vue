@@ -3,7 +3,7 @@
     <PreLoader />
     <NavBar />
     <!-- <nuxt /> -->
-    <!-- <Footer /> -->
+    <Footer />
     <CustomCursor />
   </div>
 </template>
