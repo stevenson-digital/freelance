@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <PreLoader /> -->
+    <PreLoader />
     <!-- <NavBar /> -->
     <!-- <nuxt /> -->
     <!-- <Footer /> -->
