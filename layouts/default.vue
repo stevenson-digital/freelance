@@ -1,7 +1,7 @@
 <template>
   <div>
     <PreLoader />
-    <!-- <NavBar /> -->
+    <NavBar />
     <!-- <nuxt /> -->
     <!-- <Footer /> -->
     <!-- <CustomCursor /> -->
