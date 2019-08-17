@@ -1,7 +1,7 @@
 <template>
   <div>
-    <!-- <Header />
-    <main>
+    <Header />
+    <!-- <main>
       <section
         class="[ l-Experience ] [ pt-110-50 pb-110-50 ] [ u-color-white ]"
         @mouseover="toggleCursorWhite(true)"
