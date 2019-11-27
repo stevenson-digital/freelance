@@ -60,7 +60,7 @@
           @mouseleave="toggleCursorWhite(false)"
         />
         <div class="l-Offering__back-panel">
-          <!-- <marquee-text
+          <marquee-text
             v-for="(speed, index) in speeds"
             :key="`marquee-${index}`"
             :repeat="10"
@@ -69,13 +69,7 @@
             <p class="[ f-heading-98-52 ] [ u-color-white ]">
               What I can offer you.
             </p>
-          </marquee-text> -->
-          <!-- <p
-            v-for="(speed, index) in speeds"
-            :key="`marquee-${index}`"
-            class="[ f-heading-98-52 ] [ u-color-white ]">
-            What I can offer you.
-          </p> -->
+          </marquee-text>
         </div>
         <div class="l-Offering__gradient" />
         <div class="l-Offering__gradient" />

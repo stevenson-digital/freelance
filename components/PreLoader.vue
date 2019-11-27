@@ -17,15 +17,15 @@ export default {
     return {
       visible: true
     }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.$nuxt.$emit('triggerAnimIn')
+    }, 3100) // Animation must start before fade out so they visually match
+    setTimeout(() => {
+      this.visible = false
+    }, 3500) // Total of main anim delay + time
   }
-  // mounted() {
-  //   setTimeout(() => {
-  //     this.$nuxt.$emit('triggerAnimIn')
-  //   }, 3100) // Animation must start before fade out so they visually match
-  //   setTimeout(() => {
-  //     this.visible = false
-  //   }, 3500) // Total of main anim delay + time
-  // }
 }
 </script>
 
